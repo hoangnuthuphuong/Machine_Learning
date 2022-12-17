@@ -1,6 +1,7 @@
 import numpy as np
 import os
 import itertools
+import pandas as pd
 from matplotlib import pyplot as plt
 from skimage import io
 from skimage.transform import resize
@@ -166,7 +167,6 @@ def main():
     plot_confusion_matrix(confusion, classes=['y pred', 'y test'], title='Confusion matrix')
 
     # Tạo bảng liệt kê các chỉ số
-    import pandas as pd
     acc_score, precision_sc, recall_cs, f1_sc = evaluate_Model(y_test, y_pred)
     score = [acc_score, precision_sc, recall_cs, f1_sc]
     name = ['Accuracy', 'Precision', 'Recall', 'f1-measure ']
