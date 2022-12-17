@@ -7,8 +7,7 @@ from skimage.transform import resize
 from PIL import Image
 from sklearn import neighbors
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score, recall_score, precision_score, f1_score, hamming_loss, confusion_matrix, \
-    precision_recall_curve
+from sklearn.metrics import accuracy_score, recall_score, precision_score, f1_score, hamming_loss, confusion_matrix, precision_recall_curve
 from sklearn.preprocessing import LabelBinarizer, StandardScaler, LabelEncoder
 from sklearn.model_selection import train_test_split, cross_val_score
 
